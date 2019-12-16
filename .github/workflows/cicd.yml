@@ -1,0 +1,23 @@
+name: Hz.Lib
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup netcore
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.2.108
+    - name: Pack Push
+      run: |
+        cd ./Hz.Infrastructure
+        dotnet pack -o ./nuget -c Release
+        dotnet nuget push ./nuget/*.nupkg -k oy2nooktqk4amkc55vkaxxpledpqt7vu5bpjsopbbgwzjy -s https://api.nuget.org/v3/index.json

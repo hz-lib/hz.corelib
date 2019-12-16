@@ -1,0 +1,7 @@
+nuget/
+bin/
+.vscode/
+[Dd]ebug/
+[Rr]elease/
+obj/
+.git/

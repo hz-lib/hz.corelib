@@ -1,0 +1,3 @@
+打包：dotnet pack -o ./nuget -c Release
+发布：dotnet nuget push ./nuget/Hz.Infrastructure.x.x.x.nupkg -k oy2nooktqk4amkc55vkaxxpledpqt7vu5bpjsopbbgwzjy -s https://api.nuget.org/v3/index.json
+发布之前记得修改csproj中的版本号
