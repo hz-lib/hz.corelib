@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>Hz.Infrastructure</PackageId>
-    <Version>1.0.12</Version>
+    <Version>1.0.13</Version>
     <Authors>hzgod</Authors>
     <Company>Mor</Company>
     <TargetFramework>netstandard2.0</TargetFramework>
