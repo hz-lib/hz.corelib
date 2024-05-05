@@ -20,4 +20,4 @@ jobs:
       run: |
         cd ./Hz.Infrastructure
         dotnet pack -o ./nuget -c Release
-        dotnet nuget push ./nuget/*.nupkg -k oy2nooktqk4amkc55vkaxxpledpqt7vu5bpjsopbbgwzjy -s https://api.nuget.org/v3/index.json
+        dotnet nuget push ./nuget/*.nupkg -k oy2me7nm4nx3sviw7h7qzxf64trm4quu3oeytsmdusqi2u -s https://api.nuget.org/v3/index.json
